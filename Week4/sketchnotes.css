@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1, h2 {
+	text-align: center;
+}	
+
+body{
+	background: #000000;	
+}
+
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 152px;
+	background: #ccc;	
+}
+
+.before {
+	background: #3300AA;
+	padding: auto 70px;
+}
+
+.after {
+	background: #AA0033;	
+	padding: auto 70px;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 58px;	
+	color: #cccccc;
+}
+
+img {
+	margin: 0px 50px;
+}
