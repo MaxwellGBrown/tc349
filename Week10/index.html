@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Maxwell Brown</title>
+        <meta name="description" content="Max Brown's Portfolio Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+
+        <!-- Add your site or application content here -->
+        <header>
+        <h1>Maxwell Brown</h1>
+        <h2>Student, East Lansing, MI</h2>
+        </header>
+        
+        <div id="map-location" data-0="background-image:url(img/map_gray.jpg);opacity:.5;" data-500="background-image:url(img/map_color.jpg);opacity:1;" data-800="opacity:.5;">
+        	<p>Map</p>
+        </div>
+        
+        <nav data-0="position:absolute;top:1100px;" data-1110="position:absolute;top:1100px;" data-2100="position:absolute;top:2100px;">
+        	<ul>
+            	<li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <article>
+        	<section id="about">
+            	<h3>About Maxwell Brown</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra urna in mauris lobortis condimentum. Pellentesque nec eros felis. Etiam nunc mi, scelerisque et fermentum in, mollis vel ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur tempus elit at arcu feugiat, ac lacinia elit aliquam. Aliquam venenatis lacus id mollis lacinia. Aenean erat massa, rhoncus eu nisl quis, dapibus vehicula ante. Pellentesque ac elit lorem. Integer dapibus metus vel imperdiet laoreet.</p>
+            </section>
+            <section id="portfolio">
+            	<h3>Portfolio</h3>
+                <ul class="gallery">
+                	<li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                    <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                    <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                    <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                    <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                    <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                    <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                    <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+               	</ul>
+            </section>
+            <section id="interests">
+            	<h3>Interests</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra urna in mauris lobortis condimentum. Pellentesque nec eros felis. Etiam nunc mi, scelerisque et fermentum in, mollis vel ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur tempus elit at arcu feugiat, ac lacinia elit aliquam. Aliquam venenatis lacus id mollis lacinia. Aenean erat massa, rhoncus eu nisl quis, dapibus vehicula ante. Pellentesque ac elit lorem. Integer dapibus metus vel imperdiet laoreet.</p>
+            </section>
+            <section id="contact">
+            	<h3>Contact</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra urna in mauris lobortis condimentum. Pellentesque nec eros felis. Etiam nunc mi, scelerisque et fermentum in, mollis vel ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur tempus elit at arcu feugiat, ac lacinia elit aliquam. Aliquam venenatis lacus id mollis lacinia. Aenean erat massa, rhoncus eu nisl quis, dapibus vehicula ante. Pellentesque ac elit lorem. Integer dapibus metus vel imperdiet laoreet.</p>
+            </section>
+        </article>
+        
+        <!-- End content -->
+
+
+
+
+		<!--Javascript --> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
+        <script type="text/javascript" src="js/vendor/skrollr.menu.min.js"></script>
+    	<script type="text/javascript">
+			if ($(window).width() > 600){
+				
+					var s = skrollr.init();
+				//The options (second parameter) are all optional. The values shown are the default values.
+					skrollr.menu.init(s, {
+						//skrollr will smoothly animate to the new position using `animateTo`.
+						animate: true,
+		
+						//The easing function to use.
+						easing: 'sqrt',
+		
+						//How long the animation should take in ms.
+						duration: function(currentTop, targetTop) {
+						//By default, the duration is hardcoded at 500ms.
+						return 500;
+		
+				//But you could calculate a value based on the 				current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+				//return Math.abs(currentTop - targetTop) * 10;
+						},
+					});
+			}
+    	</script>
+        <!-- End Javascript -->
+
+       
+    </body>
+</html>
